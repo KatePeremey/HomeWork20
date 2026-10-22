@@ -1,0 +1,283 @@
+	{
+    Box-sizing: border-box;
+}
+
+Body {
+    Margin: 0;
+    Font-family: Arial, sans-serif;
+    Background-color: #fffaf4;
+    Color: #49382f;
+    Line-height: 1.7;
+}
+
+Header {
+    Background-color: #ead8c5;
+    Padding: 30px 20px;
+    Text-align: center;
+}
+
+Header h1 {
+    Margin: 0 0 20px;
+    Font-size: 32px;
+    Color: #65432f;
+    Justify-content: center;
+}
+
+Header p {
+    Color: #80583f;
+}
+
+Nav {
+    Display: flex;
+    Justify-content: center;
+    Flex-wrap: wrap;
+    Gap: 12px;
+}
+
+Nav a {
+    Color: #65432f;
+    Text-decoration: none;
+    Font-weight: bold;
+    Padding: 8px 16px;
+    Border-radius: 20px;
+    Transition: 0.3s;
+}
+
+Nav a:hover {
+    Background-color: #65432f;
+    Color: white;
+}
+
+Main {
+    Max-width: 1000px;
+    Margin: 40px auto;
+    Padding: 0 20px;
+}
+
+H2 {
+    Color: #80583f;
+    Margin-top: 35px;
+    Margin-bottom: 20px;
+}
+
+Footer {
+    Margin-top: 50px;
+    Padding: 20px;
+    Text-align: center;
+    Background-color: #ead8c5;
+    Color: #65432f;
+}
+
+/* ===== ГОЛОВНА СТОРІНКА ===== */
+
+.intro-title {
+    Text-align: center;
+    Font-size: 30px;
+}
+
+.pet-card {
+    Display: flex;
+    Align-items: center;
+    Gap: 30px;
+    Background-color: white;
+    Padding: 20px;
+    Border-radius: 20px;
+    Box-shadow: 0 5px 20px rgba(90, 60, 40, 0.10);
+}
+
+.pet-photo {
+    Width: 45%;
+    Max-width: 350px;
+    Height: auto;
+    Border-radius: 15px;
+    Object-fit: cover;
+}
+
+.pet-description {
+    Font-size: 18px;
+}
+
+.pet-facts {
+    Background-color: #f3e7da;
+    Padding: 20px 30px;
+    Border-radius: 15px;
+    List-style: none;
+}
+
+.pet-facts li {
+    Padding: 8px 0;
+    Border-bottom: 1px solid #dfc9b5;
+}
+
+.pet-facts li:last-child {
+    Border-bottom: none;
+}
+
+/* ===== СТОРІНКА КОНТАКТІВ ===== */
+
+.contact-main {
+    Max-width: 800px;
+    Min-height: 55vh;
+    Display: flex;
+    Align-items: center;
+    Justify-content: center;
+}
+
+.contact-card {
+    Width: 100%;
+    Padding: 35px;
+    Background-color: white;
+    Border-radius: 20px;
+    Text-align: center;
+    Box-shadow: 0 5px 20px rgba(90, 60, 40, 0.10);
+}
+
+.contact-card h2 {
+    Margin-top: 0;
+}
+
+.contact-intro {
+    Font-size: 18px;
+    Margin-bottom: 25px;
+}
+
+.contact-list {
+    List-style: none;
+    Padding: 0;
+    Margin: 0;
+}
+
+.contact-list li {
+    Margin: 15px 0;
+    Padding: 15px;
+    Background-color: #fffaf4;
+    Border-radius: 12px;
+}
+
+.contact-list a {
+    Color: #80583f;
+    Font-weight: bold;
+    Text-decoration: none;
+}
+
+.contact-list a:hover {
+    Color: #b0784f;
+    Text-decoration: underline;
+}
+
+.contact-thanks {
+    Margin-top: 25px;
+    Font-weight: bold;
+}
+
+/* ===== ФОТОГАЛЕРЕЯ ===== */
+
+.gallery-intro {
+    Text-align: center;
+    Margin-bottom: 40px;
+}
+
+.gallery-intro p,
+.gallery-section > p {
+    Color: #756357;
+}
+
+.gallery-section {
+    Margin: 40px 0;
+    Padding: 25px;
+    Background-color: white;
+    Border-radius: 20px;
+    Box-shadow: 0 5px 20px rgba(90, 60, 40, 0.08);
+}
+
+.gallery-section h2 {
+    Margin-top: 0;
+}
+
+/* Сітка фотографій */
+
+.photo-grid {
+    Display: grid;
+    Grid-template-columns: repeat(3, minmax(0, 1fr));
+    Gap: 20px;
+    Margin-top: 25px;
+}
+
+.photo-grid figure {
+    Margin: 0;
+    Overflow: hidden;
+    Background-color: #fffaf4;
+    Border-radius: 15px;
+    Box-shadow: 0 3px 12px rgba(90, 60, 40, 0.08);
+    Transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photo-grid figure:hover {
+    Transform: translateY(-5px);
+    Box-shadow: 0 8px 18px rgba(90, 60, 40, 0.15);
+}
+
+.photo-grid img {
+    Display: block;
+    Width: 100%;
+    Height: 240px;
+    Object-fit: cover;
+}
+
+.photo-grid figcaption {
+    Padding: 14px 10px;
+    Text-align: center;
+    Font-size: 15px;
+    Color: #65432f;
+}
+
+/* Відео */
+
+.video-grid {
+    Display: grid;
+    Grid-template-columns: repeat(2, minmax(0, 1fr));
+    Gap: 25px;
+    Margin-top: 25px;
+}
+
+.video-grid figure {
+    Margin: 0;
+    Min-width: 0;
+}
+
+.video-grid video {
+    Display: block;
+    Width: 100%;
+    Border-radius: 15px;
+    Background-color: #ead8c5;
+}
+
+.video-grid figcaption {
+    Padding: 10px 0;
+    Text-align: center;
+    Color: #65432f;
+}
+
+/* Цитата та посилання */
+
+.pet-quote {
+    Margin: 40px 0;
+    Padding: 25px 30px;
+    Background-color: #f3e7da;
+    Border-left: 5px solid #a77955;
+    Border-radius: 0 15px 15px 0;
+    Font-size: 18px;
+    Font-style: italic;
+}
+
+.back-home {
+    Display: inline-block;
+    Margin: 10px 0 30px;
+    Color: #80583f;
+    Font-weight: bold;
+    Text-decoration: none;
+}
+
+.back-home:hover {
+    Text-decoration: underline;
+}
